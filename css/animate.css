@@ -3349,3 +3349,27 @@ Copyright (c) 2015 Daniel Eden
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
 }
+
+/* CSS to style the button and its animations */
+.send-wait {
+  background-color: #18c018; /* Change button color */
+  transition: background-color 0.5s ease; /* Add a transition effect */
+}
+
+@keyframes scaleUpDown {
+  0%, 100% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+}
+
+.send-wait {
+  animation: scaleUpDown 0.8s infinite;
+}
+
+.send-wait::after {
+  content: "\2713"; /* Unicode checkmark symbol */
+  margin-left: 10px;
+}

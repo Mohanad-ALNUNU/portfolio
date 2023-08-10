@@ -35,6 +35,10 @@
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
+
+	<!-- Email JS -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+	<script src="js/email.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -52,9 +56,10 @@
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t js-fullheight">
 						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-							<div class="profile-thumb" style="background: url(images/me.jpeg);"></div>
+							<div class="profile-thumb" style="background: url(images/me.png);"></div>
 							<h1><span>Mohanad AL-NUNU</span></h1>
 							<h3><span>Full-Stack Developer</span></h3>
+							<h4><span>Dive into challenges, emerge as a developer</span></h4>
 							<p>
 								<ul class="fh5co-social-icons">
 									<li><a href="#"><i class="icon-twitter2"></i></a></li>
@@ -730,7 +735,8 @@
 		</div>
 		<div class="choose animate-box">
 			<h2>Contact</h2>
-			<form action="#">
+			<img src="images/sent.gif" id="sentLogo" class="sent-logo hidden"></img>
+			<form id="contactForm">
 				<div class="row form-group">
 					<div class="col-md-6">
 						<input type="text" id="fname" class="form-control" placeholder="Your firstname">
@@ -760,7 +766,8 @@
 					</div>
 				</div>
 				<div class="form-group">
-					<input type="submit" value="Send Message" class="btn btn-primary">
+					<div class="fh5co-loader hidden"></div>
+					<input type="button" id="sendBtn" value="Send Message" class="btn btn-primary">
 				</div>
 
 			</form>	
@@ -805,4 +812,3 @@
 
 	</body>
 </html>
-
