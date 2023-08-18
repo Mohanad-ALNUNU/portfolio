@@ -1,0 +1,124 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: yellow;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header styles */
+  header {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Project carousel styles */
+  .projects-carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  .project-slide {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: transform 0.8s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-slide:hover {
+    transform: scale(1.03);
+  }
+  
+  .project-images img {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    transition: transform 1.3s ease-in-out;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+    transition: transform 1.0s ease-in-out, filter 0.3s ease-in-out;
+  }
+  
+  .project-images img.zoomed {
+    transform: scale(2.5);
+  }
+  
+  .technology-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .technology-logos img {
+    width: auto;
+    height: auto;
+    max-width: 8%;
+    max-height: 100px;
+    margin: 15px;
+    animation: slideInFromRight 5s ease-in-out forwards;
+    filter: grayscale(60%);
+  }
+  
+  .technology-logos img:hover {
+    filter: grayscale(0%);
+  }
+  
+  /* Footer styles */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Smooth scrolling behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+
+
+  #hint-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+  }
+  
+  #hint-text{
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+  }

@@ -1298,7 +1298,9 @@ img.techno-icon {
 }
 
 .proj-desc {
-  font-size: x-small;
+  font-size: large;
+  font-style: oblique;
+  font-weight: bolder;
 }
 
 /*# sourceMappingURL=style.css.map */
