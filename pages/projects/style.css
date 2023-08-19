@@ -47,7 +47,7 @@ body {
   }
   
   .project-images img.zoomed {
-    transform: scale(2.5);
+    transform: scale(1.5);
   }
   
   .technology-logos {
